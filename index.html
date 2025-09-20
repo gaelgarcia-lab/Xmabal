@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grupo935 — Innovación con impacto</title>
+  <meta name="description" content="Grupo935: de los videojuegos al ecoturismo. Proyectos innovadores con impacto social y ambiental. Conoce XAMBAL." />
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="assets/img/G935.png">Grupo935</a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="#xambal">Conoce XAMBAL</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+      </div>
+    </div>
+    <!-- Agregar al header -->
+<div class="search-box">
+  <input type="search" id="searchInput" placeholder="Buscar en Grupo935..." />
+</div>
+
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Innovación y compromiso para transformar ideas en proyectos con impacto real.</h1>
+          <p class="lead">Lo que empezó como un emprendimiento de videojuegos evolucionó hacia el desarrollo de soluciones digitales, iniciativas sociales y proyectos de turismo sustentable. Hoy, combinamos innovación, creatividad y responsabilidad social para impulsar experiencias que conectan tecnología, cultura y comunidad. Conoce nuestro primer proyecto en ecoturismo: XAMBAL, y descubre cómo nuestras ideas generan cambios positivos en Chiapas.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#nosotros">Conócenos</a>
+            <a class="btn btn-outline" id="scrollXambal" href="#xambal">Descubre XAMBAL</a>
+          </div>
+        </div>
+
+<div class="hero-media" aria-hidden="true">
+  <div class="media-card">
+    <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración tech y naturaleza">
+      <rect width="600" height="400" rx="16" fill="#eaf6f0"></rect>
+      <g transform="translate(40,30)">
+        <!-- Rectángulo blanco -->
+        <rect x="0" y="40" width="220" height="120" rx="12" fill="#000" stroke="#cde"/>
+        <!-- Logo dentro del rectángulo -->
+        <image href="assets/img/G935.png" x="0" y="40" width="220" height="120" style="cursor:pointer;" id="logoHeroSVG"/>
+        <circle cx="320" cy="200" r="80" fill="#def1ff" stroke="#cde"/>
+        <text x="10" y="30" font-size="18" fill="#0b3">Grupo935</text>
+      </g>
+    </svg>
+
+    <!-- Modal de imagen -->
+    <div id="logoModal" class="modal" role="dialog" aria-modal="true">
+      <div class="modal-content" style="max-width:500px; text-align:center;">
+        <span class="modal-close" id="closeLogoModal">&times;</span>
+        <img src="assets/img/G935.png" alt="Logo Grupo935" style="width:100%; border-radius:12px;">
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </section>
+
+    <!-- Presentación breve -->
+    <section class="intro container" id="nosotros">
+      <h2>Quiénes somos</h2>
+      <p>Lo que comenzó como un pequeño emprendimiento de videojuegos se ha convertido en Grupo935, una empresa comprometida con la innovación digital y el desarrollo de proyectos que generan impacto real. Unimos creatividad, estrategia y responsabilidad social para transformar ideas en iniciativas que conectan tecnología, cultura y comunidad, dejando huella positiva en la región.</p>
+      
+      <!-- Botón que abre el modal -->
+      <button class="btn btn-outline" id="openAbout">Leer más</button>
+    </section>
+
+    <!-- Proyectos destacados -->
+    <section class="projects container" id="proyectos">
+      <h2>Proyectos destacados</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-media" id="xambal">
+            <img src="assets/img/Xambal.jpg" alt="XAMBAL — Ecoturismo en Chiapas" onerror="this.style.opacity=0.6">
+          </div>
+          <div class="card-body">
+            <h3>XAMBAL</h3>
+            <p>Un proyecto eco-turístico que da a conocer la riqueza cultural y natural de Chiapas, conectando municipios, lugares y experiencias auténticas.</p>
+            <a class="btn btn-outline" href="pages/xambal.html">Explorar XAMBAL</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="assets/img/prox.png" alt="Próximo proyecto" onerror="this.style.opacity=0.6">
+          </div>
+          <div class="card-body">
+            <h3>Próximamente</h3>
+            <p>Estamos preparando nuevas propuestas en innovación, multimedia y turismo sustentable. Síguenos para enterarte primero.</p>
+            <a class="btn" href="#noticias">Suscríbete</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Noticias (mini) -->
+    <section class="news container" id="noticias">
+      <h2>Lo último en Grupo935</h2>
+      <div class="news-grid">
+        <article class="news-item">
+          <h4>Grupo935 anuncia el lanzamiento de XAMBAL</h4>
+          <p class="meta">14 septiembre, 2025</p>
+          <p>Nuestro primer proyecto en ecoturismo, XAMBAL, busca conectar a las comunidades y promover turismo responsable en Chiapas.</p>
+          <a href="#" class="read-more">Leer más</a>
+        </article>
+
+        <article class="news-item">
+          <h4>De los videojuegos al ecoturismo</h4>
+          <p class="meta">6 septiembre, 2025</p>
+          <p>La evolución de Grupo935: de videojuegos a la asesoría en marketing digital y el apoyo a proyectos sociales.</p>
+          <a href="#" class="read-more">Leer más</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Callout: CTA -->
+    <section class="cta container">
+      <div class="cta-inner">
+        <h3>¿Tienes una idea con impacto social o ambiental?</h3>
+        <p>En Grupo935 estamos abiertos a financiar y acompañar proyectos que generen valor en la región. Cuéntanos tu propuesta.</p>
+        <a class="btn btn-primary" href="#contacto">Contáctanos</a>
+      </div>
+    </section>
+
+    <!-- Contact short -->
+    <section class="contact container" id="contacto">
+      <h2>Contacto</h2>
+      <p>Escríbenos y conversemos sobre tu proyecto o colaboración.</p>
+<form id="contactForm" class="contact-form" novalidate>
+  <div class="row">
+    <label class="field">
+      <span>Nombre</span>
+      <input type="text" name="name" required>
+    </label>
+    <label class="field">
+      <span>Correo</span>
+      <input type="email" name="email" required>
+    </label>
+  </div>
+  <label class="field">
+    <span>Mensaje</span>
+    <textarea name="message" rows="4" required></textarea>
+  </label>
+  <div class="form-actions">
+    <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+  </div>
+</form>
+
+    </section>
+
+  </main>
+
+  <!-- Modal "Conócenos" -->
+  <div id="aboutModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="aboutTitle">
+    <div class="modal-content">
+      <span class="modal-close" id="closeAbout">&times;</span>
+      <h2 id="aboutTitle">Quiénes somos</h2>
+      <p>Nacimos como un emprendimiento de videojuegos y evolucionamos hacia marketing digital, proyectos sociales y ahora turismo sustentable.</p>
+      <h3>Misión</h3>
+      <p>Ser un referente de innovación responsable, impulsando proyectos digitales, sociales y turísticos que transformen comunidades, promuevan sostenibilidad y generen un impacto positivo y duradero en la región.</p>
+      <h3>Visión</h3>
+      <p>Fomentar el desarrollo de iniciativas que impulsen el bienestar social, la preservación cultural y ambiental, y generen valor real para las personas y comunidades que servimos.</p>
+      <h3>Valores</h3>
+      <ul class="values">
+        <li>Innovación</li>
+        <li>Responsabilidad social</li>
+        <li>Trabajo en equipo</li>
+        <li>Compromiso ambiental</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Grupo935</strong>
+        <p>Impulsando proyectos con impacto social y ambiental.</p>
+        <p>📌 4ta Av Norte 2da Oriente #123 C.P 29930</p>
+        <p>Yajalon, Chiapas.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contacto</h4>
+        <p>📧 andresgrlp@gmail.com</p>
+        <p>📱 Redes: Facebook · Instagram · YouTube · Twitch</p>
+        <p>Cel. 919 173 4148</p>
+      </div>
+
+      <div class="footer-legal">
+        <p>© 2025 Grupo935 — Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
